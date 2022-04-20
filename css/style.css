@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  padding: 15px;
+  padding: 2rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,4 +34,64 @@ main {
 
 .time {
   text-align: center;
+  font-size: 5rem;
+}
+
+#crypto {
+  font-size: 1.3rem;
+}
+
+#crypto-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+#crypto-top > img {
+  margin-right: 10px;
+}
+
+#crypto > p {
+  margin: 0;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+#image-info > h3,
+#image-info > h5 {
+  margin: 0;
+}
+
+#image-info > h3 {
+  font-size: 0.9rem;
+}
+
+#image-info > h5 {
+  font-size: 0.5rem;
+}
+
+#weather {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1.5rem;
+  grid-template-areas:
+    "i t"
+    "c c";
+  font-size: 2rem;
+}
+
+#weather > img {
+  grid-area: i;
+  width: 5rem;
+}
+
+#weather > span {
+  grid-area: t;
+  padding-top: 1rem;
+}
+
+#weather > p {
+  grid-area: c;
+  padding-top: 1rem;
 }
